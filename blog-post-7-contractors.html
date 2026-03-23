@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Landlord's Guide to Hiring and Managing Contractors | Maintenance Tracker</title>
+  <meta name="description" content="How to find, vet, and manage reliable contractors for your rental properties — and how to keep records that protect you at tax time." />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 17px;
+      line-height: 1.75;
+      color: #1e293b;
+      background: #fff;
+    }
+
+    /* NAV */
+    nav {
+      background: #fff;
+      border-bottom: 1px solid #e2e8f0;
+      padding: 0 24px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav .logo {
+      font-family: 'Lora', serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: #1e293b;
+      text-decoration: none;
+    }
+    nav .logo span { color: #2563eb; }
+    nav a.cta-nav {
+      background: #2563eb;
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    /* HERO */
+    .hero {
+      background: #f0f6ff;
+      border-bottom: 1px solid #dbeafe;
+      padding: 56px 24px 48px;
+      text-align: center;
+    }
+    .hero .category {
+      display: inline-block;
+      background: #dbeafe;
+      color: #2563eb;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 18px;
+    }
+    .hero h1 {
+      font-family: 'Lora', serif;
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 700;
+      color: #1e293b;
+      max-width: 720px;
+      margin: 0 auto 16px;
+      line-height: 1.3;
+    }
+    .hero .subtitle {
+      font-size: 1.05rem;
+      color: #475569;
+      max-width: 580px;
+      margin: 0 auto 20px;
+    }
+    .hero .meta {
+      font-size: 0.85rem;
+      color: #94a3b8;
+    }
+
+    /* CONTENT */
+    .container {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 52px 24px 64px;
+    }
+
+    h2 {
+      font-family: 'Lora', serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: #1e293b;
+      margin: 44px 0 14px;
+      line-height: 1.3;
+    }
+    h3 {
+      font-family: 'Lora', serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #1e293b;
+      margin: 28px 0 10px;
+    }
+    p { margin-bottom: 18px; color: #334155; }
+
+    /* CALLOUT */
+    .callout {
+      background: #f0f6ff;
+      border-left: 4px solid #2563eb;
+      border-radius: 0 8px 8px 0;
+      padding: 18px 22px;
+      margin: 28px 0;
+    }
+    .callout p { margin: 0; color: #1e40af; font-size: 0.97rem; }
+
+    /* TABLE */
+    .table-wrap { overflow-x: auto; margin: 24px 0 32px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+    thead th {
+      background: #2563eb;
+      color: #fff;
+      font-family: 'Lora', serif;
+      font-weight: 600;
+      padding: 12px 16px;
+      text-align: left;
+    }
+    tbody tr:nth-child(even) { background: #f8fafc; }
+    tbody td {
+      padding: 11px 16px;
+      border-bottom: 1px solid #e2e8f0;
+      color: #334155;
+      vertical-align: top;
+    }
+
+    /* CHECKLIST */
+    .checklist {
+      list-style: none;
+      margin: 16px 0 28px;
+      padding: 0;
+    }
+    .checklist li {
+      padding: 8px 0 8px 32px;
+      position: relative;
+      border-bottom: 1px solid #f1f5f9;
+      color: #334155;
+      font-size: 0.97rem;
+    }
+    .checklist li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #2563eb;
+      font-weight: 700;
+    }
+
+    /* CTA BLOCK */
+    .cta-block {
+      background: #2563eb;
+      border-radius: 12px;
+      padding: 40px 36px;
+      text-align: center;
+      margin: 48px 0 36px;
+    }
+    .cta-block h2 {
+      font-family: 'Lora', serif;
+      color: #fff;
+      font-size: 1.5rem;
+      margin: 0 0 12px;
+    }
+    .cta-block p {
+      color: #bfdbfe;
+      margin: 0 0 24px;
+      font-size: 1rem;
+    }
+    .cta-block a {
+      display: inline-block;
+      background: #fff;
+      color: #2563eb;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 14px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid #e2e8f0;
+      font-size: 0.85rem;
+      color: #94a3b8;
+    }
+    footer a { color: #2563eb; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="https://maintenancetracker.app" class="logo">Maintenance<span>Tracker</span></a>
+  <a href="https://maintenancetracker.app/signup" class="cta-nav">Try Free for 30 Days</a>
+</nav>
+
+<div class="hero">
+  <span class="category">Contractor Management</span>
+  <h1>Landlord's Guide to Hiring and Managing Contractors</h1>
+  <p class="subtitle">How to find reliable vendors, vet them properly, and keep the records that protect you when something goes wrong — or when taxes come due.</p>
+  <p class="meta">7 min read &nbsp;·&nbsp; Property Maintenance</p>
+</div>
+
+<div class="container">
+
+  <p>Every landlord eventually learns the same hard lesson: finding a good contractor is easy. Finding one you can rely on for the next ten years is a different problem entirely. The plumber who shows up on time, does the job right, charges fairly, and hands you a proper invoice is worth more than a dozen cheaper alternatives who keep you guessing.</p>
+
+  <p>This guide covers how to build that kind of contractor bench — and just as importantly, how to document the work so you're protected legally and at tax time.</p>
+
+  <h2>Why Your Contractor Relationships Matter More Than You Think</h2>
+
+  <p>For a small landlord with a handful of properties, contractors are essentially your maintenance department. You don't have a facilities team. You don't have an on-call handyman on salary. When something breaks — and something always breaks — you're only as good as the people you can call.</p>
+
+  <p>Beyond the practical side, there's a financial dimension. Repair costs are deductible, but only if you can document them properly. A contractor who hands you a detailed invoice with a date, description of work, and their business name is giving you a tax asset. One who texts "can you venmo me $200" is not.</p>
+
+  <h2>Where to Find Reliable Contractors</h2>
+
+  <p>The single best source is other landlords. If you're in a local landlord association or a real estate investing group, ask who they use. A referral from someone who owns rental properties carries more weight than a five-star Yelp review from a homeowner — the jobs are different, the expectations are different, and the landlord has already vetted the contractor under conditions similar to yours.</p>
+
+  <p>Other good sources include your local hardware store (staff often know which contractors buy materials regularly and run real businesses), property managers who are willing to share vendor contacts, and platforms like Angi or Thumbtack for lower-stakes jobs where you can build a track record with someone new.</p>
+
+  <div class="callout">
+    <p><strong>One rule worth following:</strong> Never use a contractor for a major job the first time. Start with something small and low-risk. How they handle a $300 job tells you a lot about how they'll handle a $3,000 one.</p>
+  </div>
+
+  <h2>How to Vet a Contractor Before You Hire</h2>
+
+  <p>For any job beyond basic handyman work, a quick vetting process will save you from expensive mistakes. It doesn't need to be complicated.</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>What to Check</th>
+          <th>Why It Matters</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>License (where required)</td>
+          <td>Required for electrical, plumbing, HVAC in most states. Unlicensed work can void your insurance and create liability.</td>
+        </tr>
+        <tr>
+          <td>General liability insurance</td>
+          <td>Protects you if they damage the property or injure themselves on the job.</td>
+        </tr>
+        <tr>
+          <td>Workers' comp (if they have employees)</td>
+          <td>Without it, an injured worker could come after you.</td>
+        </tr>
+        <tr>
+          <td>References from landlords specifically</td>
+          <td>Rental work has different demands than owner-occupied homes.</td>
+        </tr>
+        <tr>
+          <td>Written estimate before work begins</td>
+          <td>Establishes scope, price, and timeline — reduces disputes later.</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <p>You don't need to be aggressive about this. Most legitimate contractors are used to being asked for proof of insurance. If someone balks at the question, that's useful information.</p>
+
+  <h2>Getting Written Estimates and Invoices</h2>
+
+  <p>This is where a lot of small landlords fall short — not because they're careless, but because it feels awkward to be formal with someone you've built a friendly relationship with. Get over that instinct. Written estimates and invoices are good for both parties.</p>
+
+  <p>A proper estimate should include the scope of work, the materials to be used, the estimated cost broken down by labor and materials, and a timeline. A proper invoice should confirm what was actually done, the final cost, and the contractor's business name and contact information.</p>
+
+  <p>If your contractor doesn't normally provide written invoices, ask them to. Most will accommodate the request. If they won't, that's a sign to find someone who will — especially for jobs over a few hundred dollars.</p>
+
+  <h2>What to Document for Tax Purposes</h2>
+
+  <p>Repair and maintenance costs on rental properties are generally deductible in the year they're incurred. Capital improvements are depreciated over time. The distinction matters, and your documentation needs to support whichever treatment you're applying.</p>
+
+  <p>For each job, you want to capture the date, a description of the work performed, the vendor name, the cost, and a copy of the invoice or receipt. That's the minimum your CPA needs. If you're logging this in a spreadsheet or a notes app, that works — but it's easy for records to get scattered, especially across multiple properties and multiple years.</p>
+
+  <p>Maintenance Tracker is built exactly for this. You can log each job with all the relevant details, attach the invoice directly to the entry, and export a clean, organized record when tax season arrives. Having everything in one place — with receipts attached — is a significant upgrade over hunting through email and photo rolls every April.</p>
+
+  <h2>Building a Contractor Roster Over Time</h2>
+
+  <p>The goal is to have a reliable go-to contact for each trade: plumbing, electrical, HVAC, general handyman, and ideally a roofer and an appliance repair technician. You don't need to find all of these at once. Build the roster organically as repairs come up.</p>
+
+  <p>When you find someone good, treat them like the asset they are. Pay promptly. Communicate clearly. Give them enough lead time when the job isn't urgent. Good contractors have full schedules, and the landlords who get called first are the ones who are easy to work with.</p>
+
+  <ul class="checklist">
+    <li>Keep contractor contact info organized by trade</li>
+    <li>Note their license number and insurance expiration date</li>
+    <li>Log every job they do, with cost and date</li>
+    <li>Track their reliability (showed up on time, job done right)</li>
+    <li>Save their invoices attached to the relevant maintenance entry</li>
+  </ul>
+
+  <div class="callout">
+    <p><strong>Pro tip:</strong> When you get a great contractor, ask if they have capacity for ongoing work. Many will offer better rates or prioritize calls from landlords who give them steady, predictable business across multiple properties.</p>
+  </div>
+
+  <h2>When Things Go Wrong</h2>
+
+  <p>Even good contractors occasionally do work that needs to be corrected. If you have a written estimate that describes the scope and a clear invoice, you have a paper trail. If the conversation was all verbal, you're negotiating from a weaker position.</p>
+
+  <p>Document any issues in writing — even a brief email saying "I noticed the faucet is still leaking after last Tuesday's repair" creates a timestamped record. Most contractors will return to fix problems without a fight, especially when they know you keep records.</p>
+
+  <div class="cta-block">
+    <h2>Keep Your Contractor Records Organized Year-Round</h2>
+    <p>Log every job, attach invoices, and export clean records for your CPA — all in one place.</p>
+    <a href="https://maintenancetracker.app/signup">Try Free for 30 Days</a>
+  </div>
+
+  <p>Building a reliable contractor network takes time, but the payoff is significant. A well-maintained property with documented repair history is easier to manage, easier to insure, and easier to sell. Start with one good referral and build from there.</p>
+
+</div>
+
+<footer>
+  <p>&copy; 2025 <a href="https://maintenancetracker.app">MaintenanceTracker.app</a> &nbsp;·&nbsp; <a href="https://maintenancetracker.app/privacy">Privacy</a> &nbsp;·&nbsp; <a href="https://maintenancetracker.app/terms">Terms</a></p>
+</footer>
+
+</body>
+</html>

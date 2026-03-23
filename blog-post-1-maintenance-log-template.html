@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Rental Property Maintenance Log Template (+ Why You Need One) | Maintenance Tracker</title>
+  <meta name="description" content="Download a free rental property maintenance log template and learn why every landlord needs one. Track repairs, protect yourself legally, and save money at tax time." />
+  <!-- Canonical: https://maintenancetracker.app/blog/rental-property-maintenance-log-template -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #1a1a2e;
+      --mid: #4a4a6a;
+      --light: #8888aa;
+      --accent: #2563eb;
+      --accent-light: #eff6ff;
+      --accent-mid: #bfdbfe;
+      --green: #16a34a;
+      --green-light: #f0fdf4;
+      --border: #e2e8f0;
+      --bg: #fafaf9;
+      --white: #ffffff;
+      --max: 740px;
+    }
+
+    body {
+      font-family: 'Source Sans 3', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.75;
+      font-size: 17px;
+    }
+
+    /* ── NAV BAR (placeholder) ── */
+    nav {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    nav .logo {
+      font-family: 'Lora', serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    nav .cta-nav {
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      padding: 0.4rem 1rem;
+      border-radius: 6px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      transition: opacity .2s;
+    }
+    nav .cta-nav:hover { opacity: .85; }
+
+    /* ── HERO ── */
+    .hero {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 3rem 2rem 2.5rem;
+      text-align: center;
+    }
+    .hero .category {
+      display: inline-block;
+      background: var(--accent-light);
+      color: var(--accent);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      padding: .25rem .75rem;
+      border-radius: 99px;
+      margin-bottom: 1.25rem;
+    }
+    .hero h1 {
+      font-family: 'Lora', serif;
+      font-size: clamp(1.75rem, 4vw, 2.6rem);
+      font-weight: 700;
+      line-height: 1.25;
+      max-width: 680px;
+      margin: 0 auto 1rem;
+      color: var(--ink);
+    }
+    .hero .subtitle {
+      color: var(--mid);
+      font-size: 1.05rem;
+      max-width: 560px;
+      margin: 0 auto 1.5rem;
+    }
+    .hero .meta {
+      font-size: 0.85rem;
+      color: var(--light);
+    }
+
+    /* ── LAYOUT ── */
+    .container {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 3rem 1.5rem 5rem;
+    }
+
+    /* ── PROSE ── */
+    p { margin-bottom: 1.4rem; color: var(--mid); }
+    p strong { color: var(--ink); }
+
+    h2 {
+      font-family: 'Lora', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--ink);
+      margin: 2.5rem 0 0.75rem;
+      line-height: 1.3;
+    }
+    h3 {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--ink);
+      margin: 1.75rem 0 0.5rem;
+    }
+
+    /* ── CALLOUT BOXES ── */
+    .callout {
+      background: var(--accent-light);
+      border-left: 4px solid var(--accent);
+      border-radius: 0 8px 8px 0;
+      padding: 1.1rem 1.4rem;
+      margin: 2rem 0;
+    }
+    .callout p { color: var(--ink); margin: 0; font-size: 0.95rem; }
+    .callout strong { color: var(--accent); }
+
+    .callout-green {
+      background: var(--green-light);
+      border-left-color: var(--green);
+    }
+    .callout-green p { color: #14532d; }
+    .callout-green strong { color: var(--green); }
+
+    /* ── TABLE ── */
+    .table-wrap {
+      overflow-x: auto;
+      margin: 1.5rem 0 2rem;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+    }
+    thead tr { background: var(--ink); }
+    thead th {
+      padding: .75rem 1rem;
+      text-align: left;
+      color: #fff;
+      font-weight: 600;
+      font-size: 0.8rem;
+      letter-spacing: .05em;
+      text-transform: uppercase;
+    }
+    tbody tr:nth-child(even) { background: var(--accent-light); }
+    tbody tr:nth-child(odd) { background: var(--white); }
+    tbody td {
+      padding: .7rem 1rem;
+      color: var(--mid);
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    tbody td:first-child { color: var(--ink); font-weight: 500; }
+    tbody tr:last-child td { border-bottom: none; }
+
+    /* ── CHECKLIST ── */
+    .checklist {
+      list-style: none;
+      margin: 1rem 0 1.5rem;
+      padding: 0;
+    }
+    .checklist li {
+      display: flex;
+      align-items: flex-start;
+      gap: .75rem;
+      padding: .45rem 0;
+      color: var(--mid);
+      font-size: 0.95rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .checklist li:last-child { border-bottom: none; }
+    .checklist li::before {
+      content: '☐';
+      font-size: 1rem;
+      color: var(--accent);
+      flex-shrink: 0;
+      margin-top: .05rem;
+    }
+
+    /* ── CTA BLOCK ── */
+    .cta-block {
+      background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+      border-radius: 16px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      margin: 3rem 0 2rem;
+      color: #fff;
+    }
+    .cta-block h2 {
+      font-family: 'Lora', serif;
+      color: #fff;
+      font-size: 1.6rem;
+      margin: 0 0 .75rem;
+    }
+    .cta-block p {
+      color: #bfdbfe;
+      max-width: 460px;
+      margin: 0 auto 1.5rem;
+      font-size: 0.95rem;
+    }
+    .cta-block a {
+      display: inline-block;
+      background: #fff;
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 1rem;
+      padding: .75rem 2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: transform .15s, box-shadow .15s;
+    }
+    .cta-block a:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(0,0,0,.2);
+    }
+    .cta-block .sub {
+      margin-top: .75rem;
+      font-size: 0.8rem;
+      color: #93c5fd;
+      margin-bottom: 0;
+    }
+
+    /* ── DIVIDER ── */
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 2.5rem 0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="logo" href="https://maintenancetracker.app">Maintenance Tracker</a>
+  <a class="cta-nav" href="https://maintenancetracker.app/signup">Try Free for 30 Days</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <span class="category">Landlord Tips</span>
+  <h1>Free Rental Property Maintenance Log Template<br>(+ Why Every Landlord Needs One)</h1>
+  <p class="subtitle">Track repairs, protect yourself legally, and stop losing money at tax time — starting today.</p>
+  <p class="meta">5 min read &nbsp;·&nbsp; Updated March 2026</p>
+</div>
+
+<!-- ARTICLE BODY -->
+<div class="container">
+
+  <p>If you own rental property, you already know that maintenance never stops. The furnace goes out in January, the tenant reports a leaky faucet in March, and by December you're staring at a shoebox full of invoices trying to figure out what you spent and when.</p>
+
+  <p>A <strong>rental property maintenance log</strong> fixes that. It's a simple record of every repair, inspection, and service call on your property — and it's one of the most underused tools in a small landlord's toolkit.</p>
+
+  <p>In this post we'll walk through exactly what to track, share a free template you can use today, and explain why landlords with even two or three properties quickly outgrow spreadsheets.</p>
+
+  <h2>What Is a Rental Property Maintenance Log?</h2>
+
+  <p>A maintenance log is a running record of all maintenance activity on your rental property. Think of it as a health history for your property — every repair, every contractor visit, every tenant request, documented in one place with dates, costs, and outcomes.</p>
+
+  <p>Done well, it becomes one of the most useful documents you own as a landlord.</p>
+
+  <div class="callout">
+    <p><strong>Quick definition:</strong> A maintenance log captures what broke, when it was reported, who fixed it, what it cost, and when it was resolved. That's it — but the value compounds significantly over time.</p>
+  </div>
+
+  <h2>Why Landlords Need One (5 Real Reasons)</h2>
+
+  <h3>1. Tax deductions you won't miss</h3>
+  <p>Repair and maintenance costs are deductible against rental income — but only if you can document them. A maintenance log paired with receipts means you claim every dollar you're owed at tax time. Landlords who don't track this consistently leave real money on the table.</p>
+
+  <h3>2. Protection in tenant disputes</h3>
+  <p>If a tenant claims you ignored a repair request, your maintenance log is your evidence. A documented record showing the date the issue was reported, when you responded, and when it was resolved can make the difference in a security deposit dispute or habitability complaint.</p>
+
+  <h3>3. Smarter decisions about your property</h3>
+  <p>When you can see that you've spent $4,200 on HVAC repairs over three years, the decision to replace the system becomes a lot clearer. A log turns scattered invoices into a pattern you can act on.</p>
+
+  <h3>4. Easier handoffs to contractors</h3>
+  <p>When a new plumber asks about the history of a recurring leak, you have the answer. No more trying to remember whether it was fixed in 2023 or 2024, or which contractor did it last time.</p>
+
+  <h3>5. Peace of mind</h3>
+  <p>There's a real psychological benefit to knowing everything is recorded. You're not carrying the mental load of "did I follow up on that?" It's written down.</p>
+
+  <h2>What to Include in Your Maintenance Log</h2>
+
+  <p>A good rental property maintenance log tracks the following fields for every issue:</p>
+
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Field</th>
+          <th>What to Record</th>
+          <th>Why It Matters</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Date Reported</td>
+          <td>When the tenant or you first flagged the issue</td>
+          <td>Establishes response timeline for legal protection</td>
+        </tr>
+        <tr>
+          <td>Property / Unit</td>
+          <td>Which property and unit the issue is in</td>
+          <td>Essential if you own multiple properties</td>
+        </tr>
+        <tr>
+          <td>Issue Description</td>
+          <td>Clear description of the problem</td>
+          <td>Helps contractors understand scope quickly</td>
+        </tr>
+        <tr>
+          <td>Category</td>
+          <td>Plumbing, HVAC, Electrical, Appliance, etc.</td>
+          <td>Lets you spot patterns and recurring problems</td>
+        </tr>
+        <tr>
+          <td>Priority</td>
+          <td>Urgent, High, Medium, Low</td>
+          <td>Helps triage when multiple issues compete</td>
+        </tr>
+        <tr>
+          <td>Contractor / Vendor</td>
+          <td>Who did the work, with contact info</td>
+          <td>Build a go-to vendor list over time</td>
+        </tr>
+        <tr>
+          <td>Cost</td>
+          <td>Parts, labor, total</td>
+          <td>Critical for tax deductions and budget planning</td>
+        </tr>
+        <tr>
+          <td>Date Resolved</td>
+          <td>When the issue was fully closed out</td>
+          <td>Confirms response time; closes the loop</td>
+        </tr>
+        <tr>
+          <td>Notes</td>
+          <td>Warranty info, follow-up needed, photos</td>
+          <td>Context that saves you later</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Free Rental Property Maintenance Log Template</h2>
+
+  <p>Here's a simple checklist of what your log should capture for each maintenance event. Copy this into a spreadsheet to get started right away:</p>
+
+  <ul class="checklist">
+    <li>Date issue was reported</li>
+    <li>Property address and unit number</li>
+    <li>Reported by (tenant name or self)</li>
+    <li>Description of the problem</li>
+    <li>Category (Plumbing / HVAC / Electrical / Appliance / Structural / Other)</li>
+    <li>Priority level (Urgent / High / Medium / Low)</li>
+    <li>Contractor or vendor assigned</li>
+    <li>Date work was scheduled</li>
+    <li>Date work was completed</li>
+    <li>Total cost (parts + labor)</li>
+    <li>Receipt or invoice attached (Y/N)</li>
+    <li>Warranty information (if applicable)</li>
+    <li>Resolution notes / follow-up needed</li>
+  </ul>
+
+  <div class="callout callout-green">
+    <p><strong>Pro tip:</strong> Add a "Reported By" column and note whether the issue came from a tenant, a routine inspection, or your own walk-through. Over time, this tells you a lot about which tenants communicate well and which properties need more proactive attention.</p>
+  </div>
+
+  <h2>Spreadsheet vs. Dedicated App: When to Upgrade</h2>
+
+  <p>A spreadsheet works fine when you have one property and a handful of repairs per year. But landlords consistently hit a wall around the 2–3 property mark, or when tenant volume increases. Here's why:</p>
+
+  <p><strong>Spreadsheets don't travel well.</strong> You're at the property, the contractor calls, and your log is on a laptop at home. You end up keeping notes on your phone and transferring them later — which means they often don't get transferred at all.</p>
+
+  <p><strong>Spreadsheets don't attach photos.</strong> A picture of the water damage before and after the repair is worth more than any written description, especially in a dispute. Spreadsheets can't store them natively.</p>
+
+  <p><strong>Spreadsheets require discipline to maintain.</strong> The structure only works if you're consistent. One month of neglect and you're back to the shoebox.</p>
+
+  <p>This is exactly the gap that <strong><a href="https://maintenancetracker.app" style="color: var(--accent);">Maintenance Tracker</a></strong> was built to fill. It's a simple web app designed specifically for small landlords — not property management companies, not enterprise software. You log a maintenance issue in about 30 seconds, attach photos from your phone, track costs, and export everything at tax time. It's $9/month with a free 30-day trial, and it takes about five minutes to set up your first property.</p>
+
+  <h2>Building a Maintenance Schedule (Not Just a Log)</h2>
+
+  <p>The best landlords don't just react to problems — they prevent them. A maintenance log pairs naturally with a <strong>preventive maintenance schedule</strong>: a calendar of routine inspections and servicing that catches issues before they become expensive emergencies.</p>
+
+  <p>A basic schedule for a single-family rental might include:</p>
+
+  <ul class="checklist">
+    <li>HVAC filter replacement every 90 days</li>
+    <li>Annual furnace and AC service inspection</li>
+    <li>Gutter cleaning each fall</li>
+    <li>Smoke and CO detector testing twice yearly</li>
+    <li>Water heater inspection annually</li>
+    <li>Exterior caulking and weatherstripping check each fall</li>
+    <li>Full property walk-through at lease renewal</li>
+  </ul>
+
+  <p>Log each of these when they're completed, just like you would a repair. Over time your log becomes a complete maintenance history — something that adds real value when you sell, refinance, or hand the property to a property manager.</p>
+
+  <hr />
+
+  <!-- CTA BLOCK -->
+  <div class="cta-block">
+    <h2>Stop Managing Maintenance in Spreadsheets</h2>
+    <p>Maintenance Tracker is built for small landlords. Log repairs, track costs, attach photos, and export everything at tax time — from any device.</p>
+    <a href="https://maintenancetracker.app/signup">Start Your Free 30-Day Trial →</a>
+    <p class="sub">No credit card required &nbsp;·&nbsp; Set up in 5 minutes &nbsp;·&nbsp; $9/month after trial</p>
+  </div>
+
+  <h2>The Bottom Line</h2>
+
+  <p>A rental property maintenance log is one of the simplest habits you can build as a landlord — and one of the most valuable. It protects you legally, saves you money at tax time, helps you make better decisions about your properties, and eliminates the mental overhead of trying to remember what happened and when.</p>
+
+  <p>Start with the template above if you're just getting going. If you own more than one property or find yourself consistently behind on documenting repairs, give Maintenance Tracker a look. The 30-day trial is free and there's no setup cost.</p>
+
+  <p>Your properties are an investment. Treat their maintenance history the same way.</p>
+
+</div>
+
+</body>
+</html>
